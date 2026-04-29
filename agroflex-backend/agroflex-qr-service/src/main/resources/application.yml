@@ -1,0 +1,48 @@
+server:
+  port: 8086
+
+spring:
+  application:
+    name: agroflex-qr-service
+  datasource:
+    url: jdbc:mysql://localhost:3306/agroflexsoa?useSSL=false&serverTimezone=America/Mexico_City&allowPublicKeyRetrieval=true
+    username: ${DB_USER:root}
+    password: ${DB_PASS:}
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: false
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL8Dialect
+        format_sql: true
+
+eureka:
+  client:
+    service-url:
+      defaultZone: ${EUREKA_URL:http://localhost:8761/eureka}
+  instance:
+    prefer-ip-address: true
+
+jwt:
+  secret: ${JWT_SECRET:agroflex_dev_secret_256bits_cambiar_en_prod_agroflex_secret}
+
+# HMAC secret para firmar el token QR (distinto del JWT secret)
+qr:
+  token:
+    secret: ${QR_TOKEN_SECRET:agroflex_qr_hmac_secret_256bits_cambiar_en_prod}
+    expiration-hours: 48
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info
+  endpoint:
+    health:
+      show-details: when-authorized
+
+logging:
+  level:
+    com.agroflex.qr: INFO

@@ -1,0 +1,28 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(JAVA21=\"/c/Users/josco/AppData/Roaming/Code/User/globalStorage/pleiades.java-extension-pack-jdk/java/21/bin\")",
+      "Bash(BCRYPT_JAR=\"C:/Users/josco/.m2/repository/org/springframework/security/spring-security-crypto/6.2.2/spring-security-crypto-6.2.2.jar\")",
+      "Bash(__NEW_LINE_29b06bad83b07ece__ \"$JAVA21/javac.exe\" -cp \"$BCRYPT_JAR\" /tmp/GenHash.java)",
+      "Bash(\"$JAVA21/java.exe\" -cp \"/tmp;$BCRYPT_JAR\" GenHash)",
+      "Bash(curl -s http://localhost:8080/actuator/health)",
+      "Bash(curl -s http://localhost:8082/actuator/health)",
+      "Bash(grep -r \"8080\\\\|8082\\\\|AUTH_SERVICE\\\\|auth.*url\\\\|baseURL\" /c/xampp/htdocs/AgroflexSOA/agroflex-frontend/src --include=*.js --include=*.jsx --include=*.ts --include=*.env* -l)",
+      "Bash(cat /c/xampp/htdocs/AgroflexSOA/agroflex-frontend/.env*)",
+      "Bash(curl -s -X POST http://localhost:8080/api/auth/register -H \"Content-Type: application/json\" -d '{\"\"nombre\"\":\"\"Test\"\",\"\"apellidos\"\":\"\"Usuario\"\",\"\"correo\"\":\"\"test123@test.com\"\",\"\"password\"\":\"\"Test1234\"\"}')",
+      "Bash(curl -s -X POST http://localhost:8080/api/auth/login -H \"Content-Type: application/json\" -d '{\"\"correo\"\":\"\"test123@test.com\"\",\"\"password\"\":\"\"Test1234\"\"}')",
+      "Bash(mvn clean:*)",
+      "Read(//c/xampp/mysql/bin/**)",
+      "Bash(./mysql.exe -u root agroflexsoa -e \":*)",
+      "Bash(./mysql.exe -u root agroflexsoa -e \"DESCRIBE cosechas_lote;\")",
+      "Bash(netstat -ano)",
+      "Bash(curl -s \"http://localhost:8082/api/catalog/lotes?page=0&size=1\")",
+      "Bash(powershell -Command \"Start-Process ''java'' -ArgumentList ''-jar'',''target/agroflex-gateway-1.0.0.jar'' -WorkingDirectory ''.'' -WindowStyle Normal\")",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" -X POST \"http://localhost:8081/api/auth/login\" -H \"Content-Type: application/json\" -d '{\"\"correo\"\":\"\"test@test.com\"\",\"\"password\"\":\"\"wrong\"\"}')",
+      "Bash(powershell -Command \"Get-NetTCPConnection -LocalPort 8080,8087 -State Listen -ErrorAction SilentlyContinue | Select-Object LocalPort, OwningProcess\")",
+      "Bash(powershell -Command \"Get-NetTCPConnection -LocalPort 8087 -State Listen -ErrorAction SilentlyContinue | Select-Object LocalPort, OwningProcess\")",
+      "Bash(curl -s \"http://localhost:8080/api/geolocation/municipios?q=tepe\")",
+      "Bash(powershell -Command \"$input | ConvertFrom-Json | Select-Object -First 5 | ConvertTo-Json\")"
+    ]
+  }
+}

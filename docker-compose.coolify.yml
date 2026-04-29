@@ -1,0 +1,81 @@
+# ============================================================
+#  AgroFlex SOA — Override para Dokploy (Traefik proxy)
+#
+#  Uso:
+#    docker compose -f docker-compose.yml -f docker-compose.coolify.yml up -d --build
+#
+#  Lógica:
+#    - Solo el frontend se expone via Traefik
+#    - El nginx del frontend ya hace proxy de /api/ → gateway:8080 internamente
+#    - Todos los microservicios quedan dentro de la red interna Docker
+#    - Dokploy gestiona SSL (Let's Encrypt) automáticamente via Traefik
+# ============================================================
+
+services:
+
+  # MySQL: contraseña desde variable de entorno (no hardcoded)
+  mysql:
+    ports: []
+    environment:
+      MYSQL_ROOT_PASSWORD: ${DB_PASS}
+      MYSQL_DATABASE: agroflexsoa
+
+  # Eureka: solo interno
+  eureka:
+    ports: []
+
+  # Gateway: solo interno (el frontend nginx le hace proxy)
+  gateway:
+    ports: []
+
+  # Microservicios internos
+  auth:
+    ports: []
+  catalog:
+    ports: []
+  users:
+    ports: []
+  orders:
+    ports: []
+  payments:
+    ports: []
+  qr:
+    ports: []
+  geolocation:
+    ports: []
+  notifications:
+    ports: []
+  admin:
+    ports: []
+
+  # ── Frontend: único punto de entrada ────────────────────────────────────────
+  # Traefik enruta agroflex.codersti.com.mx → frontend:80
+  # El nginx del frontend maneja:
+  #   /       → React SPA
+  #   /api/*  → proxy a gateway:8080 (red interna Docker)
+  frontend:
+    ports: []
+    networks:
+      - agroflex-net
+      - dokploy-network
+    labels:
+      - traefik.enable=true
+      # Router HTTPS
+      - "traefik.http.routers.agroflex.rule=Host(`agroflex.codersti.com.mx`)"
+      - traefik.http.routers.agroflex.entrypoints=websecure
+      - traefik.http.routers.agroflex.tls=true
+      - traefik.http.routers.agroflex.tls.certresolver=letsencrypt
+      # Router HTTP → redirect a HTTPS
+      - "traefik.http.routers.agroflex-http.rule=Host(`agroflex.codersti.com.mx`)"
+      - traefik.http.routers.agroflex-http.entrypoints=web
+      - traefik.http.routers.agroflex-http.middlewares=https-redirect
+      # Puerto interno del frontend
+      - traefik.http.services.agroflex.loadbalancer.server.port=80
+      # Middleware redirect HTTP→HTTPS
+      - traefik.http.middlewares.https-redirect.redirectscheme.scheme=https
+      - traefik.http.middlewares.https-redirect.redirectscheme.permanent=true
+
+# Red externa de Dokploy (donde vive Traefik)
+networks:
+  dokploy-network:
+    external: true

@@ -1,0 +1,60 @@
+spring:
+  application:
+    name: agroflex-notifications-service
+  datasource:
+    url: jdbc:mysql://localhost:3306/agroflexsoa?useSSL=false&serverTimezone=America/Mexico_City&allowPublicKeyRetrieval=true
+    username: ${DB_USER:root}
+    password: ${DB_PASS:}
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: validate
+    show-sql: false
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL8Dialect
+
+  # Email (Gmail SMTP — configurar credenciales en prod)
+  mail:
+    host: ${MAIL_HOST:smtp.gmail.com}
+    port: ${MAIL_PORT:587}
+    username: ${MAIL_USER:}
+    password: ${MAIL_PASS:}
+    properties:
+      mail.smtp.auth: true
+      mail.smtp.starttls.enable: true
+
+server:
+  port: 8088
+
+jwt:
+  secret: ${JWT_SECRET:agroflex_dev_secret_256bits_cambiar_en_prod_agroflex_secret}
+
+# Twilio (SMS)
+twilio:
+  account-sid: ${TWILIO_ACCOUNT_SID:}
+  auth-token: ${TWILIO_AUTH_TOKEN:}
+  from-number: ${TWILIO_FROM:}
+  enabled: ${TWILIO_ENABLED:false}
+
+# Firebase (FCM Push Notifications)
+firebase:
+  credentials-path: ${FIREBASE_CREDENTIALS_PATH:firebase-service-account.json}
+  enabled: ${FIREBASE_ENABLED:false}
+
+# Configuración del remitente
+notifications:
+  email:
+    from: ${MAIL_FROM:noreply@agroflex.mx}
+    from-name: AgroFlex
+
+eureka:
+  client:
+    service-url:
+      defaultZone: ${EUREKA_URL:http://localhost:8761/eureka/}
+    enabled: true
+
+logging:
+  level:
+    com.agroflex.notifications: DEBUG
+    org.springframework.mail: WARN

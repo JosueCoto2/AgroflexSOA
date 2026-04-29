@@ -1,0 +1,78 @@
+server:
+  port: 8084
+
+spring:
+  application:
+    name: agroflex-orders-service
+  datasource:
+    url: jdbc:mysql://localhost:3306/agroflexsoa?useSSL=false&serverTimezone=America/Mexico_City&allowPublicKeyRetrieval=true
+    username: ${DB_USER:root}
+    password: ${DB_PASS:}
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: false
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL8Dialect
+        format_sql: true
+
+eureka:
+  client:
+    service-url:
+      defaultZone: ${EUREKA_URL:http://localhost:8761/eureka}
+  instance:
+    prefer-ip-address: true
+
+# URLs de servicios externos para Feign (vacío = usa Eureka)
+services:
+  catalog:
+    url: ${CATALOG_SERVICE_URL:http://localhost:8082}
+  payments:
+    url: ${PAYMENTS_SERVICE_URL:http://localhost:8085}
+  qr:
+    url: ${QR_SERVICE_URL:http://localhost:8086}
+  notifications:
+    url: ${NOTIFICATIONS_SERVICE_URL:http://localhost:8088}
+
+# JWT — debe ser idéntico al secret del auth-service y del gateway
+jwt:
+  secret: ${JWT_SECRET:agroflex_dev_secret_256bits_cambiar_en_prod_agroflex_secret}
+
+feign:
+  client:
+    config:
+      default:
+        connectTimeout: 3000
+        readTimeout: 8000
+      # Catálogo: crítico para validación de la orden (sin fallback que permita crear sin stock)
+      agroflex-catalog-service:
+        connectTimeout: 3000
+        readTimeout: 6000
+      # Servicios secundarios: si fallan no deben bloquear la creación de la orden
+      agroflex-qr-service:
+        connectTimeout: 2000
+        readTimeout: 4000
+      agroflex-notifications-service:
+        connectTimeout: 2000
+        readTimeout: 4000
+      agroflex-payments-service:
+        connectTimeout: 2000
+        readTimeout: 5000
+  circuitbreaker:
+    enabled: false
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info
+  endpoint:
+    health:
+      show-details: when-authorized
+
+logging:
+  level:
+    com.agroflex.orders: INFO
+    feign: WARN

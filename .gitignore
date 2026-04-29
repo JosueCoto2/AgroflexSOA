@@ -1,0 +1,23 @@
+# Variables de entorno — nunca subir al repositorio
+.env
+.env.production
+
+# Maven build output
+**/target/
+**/*.jar
+**/*.war
+**/*.class
+
+# Node modules
+**/node_modules/
+
+# JDK embebido
+**/openJdk-*/
+**/$null
+
+# Logs
+logs/
+*.log
+
+# Excepciones
+!.env.example

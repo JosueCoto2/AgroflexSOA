@@ -1,0 +1,49 @@
+version: '3.8'
+
+services:
+  # Base de Datos MySQL para desarrollo
+  mysql:
+    image: mysql:8.0
+    container_name: agroflex-mysql-dev
+    environment:
+      MYSQL_ROOT_PASSWORD: root_password
+      MYSQL_DATABASE: agroflex_db
+      MYSQL_USER: agroflex_user
+      MYSQL_PASSWORD: agroflex_pass
+    ports:
+      - "3306:3306"
+    volumes:
+      - ../SOAarquitecture/agroflex_database.sql:/docker-entrypoint-initdb.d/agroflex_database.sql
+      - mysql_data_dev:/var/lib/mysql
+    networks:
+      - agroflex-network
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost"]
+      timeout: 20s
+      retries: 10
+
+  # Eureka Server
+  eureka-server:
+    image: openjdk:17-jdk-slim
+    container_name: agroflex-eureka-dev
+    ports:
+      - "8761:8761"
+    networks:
+      - agroflex-network
+    depends_on:
+      - mysql
+    volumes:
+      - ./agroflex-eureka-server/target:/app
+    working_dir: /app
+    command: java -jar eureka-server.jar
+    environment:
+      - SPRING_PROFILES_ACTIVE=dev
+      - EUREKA_CLIENT_REGISTER_WITH_EUREKA=false
+      - EUREKA_CLIENT_FETCH_REGISTRY=false
+
+volumes:
+  mysql_data_dev:
+
+networks:
+  agroflex-network:
+    driver: bridge

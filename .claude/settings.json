@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(mvn compile:*)",
+      "Bash(for f:*)",
+      "Bash(do echo:*)",
+      "Read(//c/xampp/htdocs/AgroflexSOA/**)",
+      "Bash(wc -l agroflex-frontend/src/components/landing/*.jsx)"
+    ]
+  }
+}

@@ -1,0 +1,19 @@
+Picked up JAVA_TOOL_OPTIONS: -Dstdout.encoding=UTF-8 -Dstderr.encoding=UTF-8
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ----------------< com.agroflex:agroflex-admin-service >-----------------
+[INFO] Building AgroFlex Admin Service 1.0.0
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- clean:3.3.2:clean (default-clean) @ agroflex-admin-service ---
+[INFO] Deleting c:\xampp\htdocs\AgroflexSOA\agroflex-backend\agroflex-admin-service\target
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ agroflex-admin-service ---
+[INFO] Copying 1 resource from src\main\resources to target\classes
+[INFO] Copying 0 resource from src\main\resources to target\classes
+[INFO] 
+[INFO] --- compiler:3.11.0:compile (default-compile) @ agroflex-admin-service ---
+[INFO] Changes detected - recompiling the module! :source
+[INFO] Compiling 40 source files with javac [debug release 25] to target\classes
+¿Desea terminar el trabajo por lotes (S/N)? ¿Desea terminar el trabajo por lotes (S/N)? ¿Desea terminar el trabajo por lotes (S/N)? ¿Desea terminar el trabajo por lotes (S/N)? ¿Desea terminar el trabajo por lotes (S/N)? 

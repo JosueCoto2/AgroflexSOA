@@ -1,0 +1,251 @@
+version: '3.8'
+
+services:
+  # Base de Datos MySQL
+  mysql:
+    image: mysql:8.0
+    container_name: agroflex-mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: root_password
+      MYSQL_DATABASE: agroflex_db
+      MYSQL_USER: agroflex_user
+      MYSQL_PASSWORD: agroflex_pass
+    ports:
+      - "3306:3306"
+    volumes:
+      - ./agroflex_database.sql:/docker-entrypoint-initdb.d/agroflex_database.sql
+      - mysql_data:/var/lib/mysql
+    networks:
+      - agroflex-network
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost"]
+      timeout: 20s
+      retries: 10
+
+  # Eureka Server (Service Discovery)
+  eureka-server:
+    build:
+      context: ./agroflex-eureka-server
+      dockerfile: Dockerfile
+    container_name: agroflex-eureka
+    ports:
+      - "8761:8761"
+    networks:
+      - agroflex-network
+    depends_on:
+      - mysql
+    environment:
+      - SPRING_PROFILES_ACTIVE=docker
+
+  # Config Server
+  config-server:
+    build:
+      context: ./agroflex-config-server
+      dockerfile: Dockerfile
+    container_name: agroflex-config
+    ports:
+      - "8888:8888"
+    networks:
+      - agroflex-network
+    depends_on:
+      - eureka-server
+    environment:
+      - SPRING_PROFILES_ACTIVE=docker
+
+  # Gateway
+  gateway:
+    build:
+      context: ./agroflex-gateway
+      dockerfile: Dockerfile
+    container_name: agroflex-gateway
+    ports:
+      - "8080:8080"
+    networks:
+      - agroflex-network
+    depends_on:
+      - eureka-server
+    environment:
+      - SPRING_PROFILES_ACTIVE=docker
+
+  # Auth Service
+  auth-service:
+    build:
+      context: ./agroflex-auth-service
+      dockerfile: Dockerfile
+    container_name: agroflex-auth
+    ports:
+      - "8081:8081"
+    networks:
+      - agroflex-network
+    depends_on:
+      mysql:
+        condition: service_healthy
+      eureka-server:
+        condition: service_started
+    environment:
+      - SPRING_PROFILES_ACTIVE=docker
+      - SPRING_DATASOURCE_URL=jdbc:mysql://mysql:3306/agroflex_db
+      - SPRING_DATASOURCE_USERNAME=agroflex_user
+      - SPRING_DATASOURCE_PASSWORD=agroflex_pass
+      - EUREKA_CLIENT_SERVICEURL_DEFAULTZONE=http://eureka-server:8761/eureka/
+
+  # Catalog Service
+  catalog-service:
+    build:
+      context: ./agroflex-catalog-service
+      dockerfile: Dockerfile
+    container_name: agroflex-catalog
+    ports:
+      - "8082:8082"
+    networks:
+      - agroflex-network
+    depends_on:
+      mysql:
+        condition: service_healthy
+      eureka-server:
+        condition: service_started
+    environment:
+      - SPRING_PROFILES_ACTIVE=docker
+      - SPRING_DATASOURCE_URL=jdbc:mysql://mysql:3306/agroflex_db
+      - SPRING_DATASOURCE_USERNAME=agroflex_user
+      - SPRING_DATASOURCE_PASSWORD=agroflex_pass
+      - EUREKA_CLIENT_SERVICEURL_DEFAULTZONE=http://eureka-server:8761/eureka/
+
+  # Users Service
+  users-service:
+    build:
+      context: ./agroflex-users-service
+      dockerfile: Dockerfile
+    container_name: agroflex-users
+    ports:
+      - "8083:8083"
+    networks:
+      - agroflex-network
+    depends_on:
+      mysql:
+        condition: service_healthy
+      eureka-server:
+        condition: service_started
+    environment:
+      - SPRING_PROFILES_ACTIVE=docker
+      - SPRING_DATASOURCE_URL=jdbc:mysql://mysql:3306/agroflex_db
+      - SPRING_DATASOURCE_USERNAME=agroflex_user
+      - SPRING_DATASOURCE_PASSWORD=agroflex_pass
+      - EUREKA_CLIENT_SERVICEURL_DEFAULTZONE=http://eureka-server:8761/eureka/
+
+  # Orders Service
+  orders-service:
+    build:
+      context: ./agroflex-orders-service
+      dockerfile: Dockerfile
+    container_name: agroflex-orders
+    ports:
+      - "8084:8084"
+    networks:
+      - agroflex-network
+    depends_on:
+      mysql:
+        condition: service_healthy
+      eureka-server:
+        condition: service_started
+    environment:
+      - SPRING_PROFILES_ACTIVE=docker
+      - SPRING_DATASOURCE_URL=jdbc:mysql://mysql:3306/agroflex_db
+      - SPRING_DATASOURCE_USERNAME=agroflex_user
+      - SPRING_DATASOURCE_PASSWORD=agroflex_pass
+      - EUREKA_CLIENT_SERVICEURL_DEFAULTZONE=http://eureka-server:8761/eureka/
+
+  # Payments Service
+  payments-service:
+    build:
+      context: ./agroflex-payments-service
+      dockerfile: Dockerfile
+    container_name: agroflex-payments
+    ports:
+      - "8085:8085"
+    networks:
+      - agroflex-network
+    depends_on:
+      mysql:
+        condition: service_healthy
+      eureka-server:
+        condition: service_started
+    environment:
+      - SPRING_PROFILES_ACTIVE=docker
+      - SPRING_DATASOURCE_URL=jdbc:mysql://mysql:3306/agroflex_db
+      - SPRING_DATASOURCE_USERNAME=agroflex_user
+      - SPRING_DATASOURCE_PASSWORD=agroflex_pass
+      - EUREKA_CLIENT_SERVICEURL_DEFAULTZONE=http://eureka-server:8761/eureka/
+
+  # QR Service
+  qr-service:
+    build:
+      context: ./agroflex-qr-service
+      dockerfile: Dockerfile
+    container_name: agroflex-qr
+    ports:
+      - "8086:8086"
+    networks:
+      - agroflex-network
+    depends_on:
+      mysql:
+        condition: service_healthy
+      eureka-server:
+        condition: service_started
+    environment:
+      - SPRING_PROFILES_ACTIVE=docker
+      - SPRING_DATASOURCE_URL=jdbc:mysql://mysql:3306/agroflex_db
+      - SPRING_DATASOURCE_USERNAME=agroflex_user
+      - SPRING_DATASOURCE_PASSWORD=agroflex_pass
+      - EUREKA_CLIENT_SERVICEURL_DEFAULTZONE=http://eureka-server:8761/eureka/
+
+  # Geolocation Service
+  geolocation-service:
+    build:
+      context: ./agroflex-geolocation-service
+      dockerfile: Dockerfile
+    container_name: agroflex-geolocation
+    ports:
+      - "8087:8087"
+    networks:
+      - agroflex-network
+    depends_on:
+      mysql:
+        condition: service_healthy
+      eureka-server:
+        condition: service_started
+    environment:
+      - SPRING_PROFILES_ACTIVE=docker
+      - SPRING_DATASOURCE_URL=jdbc:mysql://mysql:3306/agroflex_db
+      - SPRING_DATASOURCE_USERNAME=agroflex_user
+      - SPRING_DATASOURCE_PASSWORD=agroflex_pass
+      - EUREKA_CLIENT_SERVICEURL_DEFAULTZONE=http://eureka-server:8761/eureka/
+
+  # Notifications Service
+  notifications-service:
+    build:
+      context: ./agroflex-notifications-service
+      dockerfile: Dockerfile
+    container_name: agroflex-notifications
+    ports:
+      - "8088:8088"
+    networks:
+      - agroflex-network
+    depends_on:
+      mysql:
+        condition: service_healthy
+      eureka-server:
+        condition: service_started
+    environment:
+      - SPRING_PROFILES_ACTIVE=docker
+      - SPRING_DATASOURCE_URL=jdbc:mysql://mysql:3306/agroflex_db
+      - SPRING_DATASOURCE_USERNAME=agroflex_user
+      - SPRING_DATASOURCE_PASSWORD=agroflex_pass
+      - EUREKA_CLIENT_SERVICEURL_DEFAULTZONE=http://eureka-server:8761/eureka/
+
+volumes:
+  mysql_data:
+
+networks:
+  agroflex-network:
+    driver: bridge

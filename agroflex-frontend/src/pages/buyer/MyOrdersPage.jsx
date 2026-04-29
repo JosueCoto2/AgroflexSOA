@@ -1,1 +1,1 @@
-// TODO: implement
+export { default } from './MisPedidos'

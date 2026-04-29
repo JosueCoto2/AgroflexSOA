@@ -1,0 +1,53 @@
+spring:
+  application:
+    name: agroflex-gateway
+  cloud:
+    gateway:
+      routes:
+        - id: auth-route
+          uri: http://agroflex-auth:8081
+          predicates:
+            - Path=/api/auth/**
+        - id: catalog-route
+          uri: http://agroflex-catalog:8082
+          predicates:
+            - Path=/api/catalog/**,/api/productos/**,/api/cosechas/**,/api/suministros/**
+        - id: users-route
+          uri: http://agroflex-users:8083
+          predicates:
+            - Path=/api/users/**
+        - id: orders-route
+          uri: http://agroflex-orders:8084
+          predicates:
+            - Path=/api/orders/**
+        - id: payments-route
+          uri: http://agroflex-payments:8085
+          predicates:
+            - Path=/api/payments/**
+        - id: qr-route
+          uri: http://agroflex-qr:8086
+          predicates:
+            - Path=/api/qr/**
+        - id: geolocation-route
+          uri: http://agroflex-geolocation:8087
+          predicates:
+            - Path=/api/geolocation/**
+        - id: notifications-route
+          uri: http://agroflex-notifications:8088
+          predicates:
+            - Path=/api/notifications/**
+        - id: admin-route
+          uri: http://agroflex-admin:8089
+          predicates:
+            - Path=/api/admin/**
+
+server:
+  port: 8080
+
+jwt:
+  secret: ${JWT_SECRET:agroflex_dev_secret_256bits_cambiar_en_prod_agroflex_secret}
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://agroflex-eureka:8761/eureka/

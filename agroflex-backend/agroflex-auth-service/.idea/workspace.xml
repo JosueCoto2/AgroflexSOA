@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="0d332b27-39a4-46c2-8bb6-a98e9067eb1e" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../../.claude/settings.local.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../.claude/settings.local.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SOAarquitecture/agroflex_database.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../agroflex-admin-service/src/main/java/com/agroflex/admin/security/JwtAuthFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/../agroflex-admin-service/src/main/java/com/agroflex/admin/security/JwtAuthFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../agroflex-admin-service/target/classes/com/agroflex/admin/config/SecurityConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/../agroflex-admin-service/target/classes/com/agroflex/admin/config/SecurityConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../agroflex-admin-service/target/classes/com/agroflex/admin/security/JwtAuthFilter.class" beforeDir="false" afterPath="$PROJECT_DIR$/../agroflex-admin-service/target/classes/com/agroflex/admin/security/JwtAuthFilter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/agroflex/auth/controller/AuthController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/agroflex/auth/controller/AuthController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/agroflex/auth/security/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/agroflex/auth/security/SecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/agroflex/auth/service/AuthService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/agroflex/auth/service/AuthService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/agroflex-auth-service-1.0.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/agroflex-auth-service-1.0.0.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/agroflex-auth-service-1.0.0.jar.original" beforeDir="false" afterPath="$PROJECT_DIR$/target/agroflex-auth-service-1.0.0.jar.original" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/agroflex/auth/controller/AuthController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/agroflex/auth/controller/AuthController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/agroflex/auth/security/SecurityConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/agroflex/auth/security/SecurityConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/agroflex/auth/service/AuthService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/agroflex/auth/service/AuthService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../agroflex-catalog-service/src/main/java/com/agroflex/catalog/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/../agroflex-catalog-service/src/main/java/com/agroflex/catalog/config/SecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../agroflex-catalog-service/src/main/java/com/agroflex/catalog/controller/CosechaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../agroflex-catalog-service/src/main/java/com/agroflex/catalog/controller/CosechaController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../agroflex-catalog-service/src/main/java/com/agroflex/catalog/model/CosechaLote.java" beforeDir="false" afterPath="$PROJECT_DIR$/../agroflex-catalog-service/src/main/java/com/agroflex/catalog/model/CosechaLote.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../agroflex-catalog-service/src/main/java/com/agroflex/catalog/model/ImagenGaleria.java" beforeDir="false" afterPath="$PROJECT_DIR$/../agroflex-catalog-service/src/main/java/com/agroflex/catalog/model/ImagenGaleria.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../agroflex-catalog-service/src/main/java/com/agroflex/catalog/repository/CosechaLoteRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../agroflex-catalog-service/src/main/java/com/agroflex/catalog/repository/CosechaLoteRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../agroflex-catalog-service/src/main/java/com/agroflex/catalog/security/JwtAuthFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/../agroflex-catalog-service/src/main/java/com/agroflex/catalog/security/JwtAuthFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../agroflex-catalog-service/src/main/java/com/agroflex/catalog/service/CosechaService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../agroflex-catalog-service/src/main/java/com/agroflex/catalog/service/CosechaService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../agroflex-catalog-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../agroflex-catalog-service/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../agroflex-catalog-service/target/agroflex-catalog-service-1.0.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/../agroflex-catalog-service/target/agroflex-catalog-service-1.0.0.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../agroflex-catalog-service/target/agroflex-catalog-service-1.0.0.jar.original" beforeDir="false" afterPath="$PROJECT_DIR$/../agroflex-catalog-service/target/agroflex-catalog-service-1.0.0.jar.original" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../agroflex-catalog-service/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../agroflex-catalog-service/target/classes/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../agroflex-catalog-service/target/classes/com/agroflex/catalog/CatalogApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/../agroflex-catalog-service/target/classes/com/agroflex/catalog/CatalogApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../agroflex-catalog-service/target/classes/com/agroflex/catalog/config/SecurityConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/../agroflex-catalog-service/target/classes/com/agroflex/catalog/config/SecurityConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../agroflex-catalog-service/target/classes/com/agroflex/catalog/controller/ProductoController.class" beforeDir="false" afterPath="$PROJECT_DIR$/../agroflex-catalog-service/target/classes/com/agroflex/catalog/controller/ProductoController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../agroflex-catalog-service/target/classes/com/agroflex/catalog/dto/CrearProductoRequest.class" beforeDir="false" afterPath="$PROJECT_DIR$/../agroflex-catalog-service/target/classes/com/agroflex/catalog/dto/CrearProductoRequest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../agroflex-catalog-service/target/classes/com/agroflex/catalog/dto/ProductoResumenDTO$UbicacionDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/../agroflex-catalog-service/target/classes/com/agroflex/catalog/dto/ProductoResumenDTO$UbicacionDTO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../agroflex-catalog-service/target/classes/com/agroflex/catalog/dto/ProductoResumenDTO$VendedorDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/../agroflex-catalog-service/target/classes/com/agroflex/catalog/dto/ProductoResumenDTO$VendedorDTO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../agroflex-catalog-service/target/classes/com/agroflex/catalog/dto/ProductoResumenDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/../agroflex-catalog-service/target/classes/com/agroflex/catalog/dto/ProductoResumenDTO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../agroflex-catalog-service/target/classes/com/agroflex/catalog/exception/GlobalExceptionHandler$ErrorResponse.class" beforeDir="false" afterPath="$PROJECT_DIR$/../agroflex-catalog-service/target/classes/com/agroflex/catalog/exception/GlobalExceptionHandler$ErrorResponse.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../agroflex-catalog-service/target/classes/com/agroflex/catalog/exception/GlobalExceptionHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/../agroflex-catalog-service/target/classes/com/agroflex/catalog/exception/GlobalExceptionHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../agroflex-catalog-service/target/classes/com/agroflex/catalog/model/Producto$ProductoBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/../agroflex-catalog-service/target/classes/com/agroflex/catalog/model/Producto$ProductoBuilder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../agroflex-catalog-service/target/classes/com/agroflex/catalog/model/Producto.class" beforeDir="false" afterPath="$PROJECT_DIR$/../agroflex-catalog-service/target/classes/com/agroflex/catalog/model/Producto.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../agroflex-catalog-service/target/classes/com/agroflex/catalog/repository/ProductoRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/../agroflex-catalog-service/target/classes/com/agroflex/catalog/repository/ProductoRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../agroflex-catalog-service/target/classes/com/agroflex/catalog/security/JwtAuthFilter.class" beforeDir="false" afterPath="$PROJECT_DIR$/../agroflex-catalog-service/target/classes/com/agroflex/catalog/security/JwtAuthFilter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../agroflex-catalog-service/target/classes/com/agroflex/catalog/security/JwtAuthPrincipal.class" beforeDir="false" afterPath="$PROJECT_DIR$/../agroflex-catalog-service/target/classes/com/agroflex/catalog/security/JwtAuthPrincipal.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../agroflex-catalog-service/target/classes/com/agroflex/catalog/security/JwtService.class" beforeDir="false" afterPath="$PROJECT_DIR$/../agroflex-catalog-service/target/classes/com/agroflex/catalog/security/JwtService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../agroflex-catalog-service/target/classes/com/agroflex/catalog/service/ProductoService.class" beforeDir="false" afterPath="$PROJECT_DIR$/../agroflex-catalog-service/target/classes/com/agroflex/catalog/service/ProductoService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../agroflex-catalog-service/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/../agroflex-catalog-service/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../agroflex-catalog-service/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/../agroflex-catalog-service/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../agroflex-eureka-server/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/../agroflex-eureka-server/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../agroflex-gateway/src/main/java/com/agroflex/gateway/filters/JwtAuthFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/../agroflex-gateway/src/main/java/com/agroflex/gateway/filters/JwtAuthFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../agroflex-gateway/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../agroflex-gateway/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../agroflex-gateway/target/agroflex-gateway-1.0.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/../agroflex-gateway/target/agroflex-gateway-1.0.0.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../agroflex-gateway/target/agroflex-gateway-1.0.0.jar.original" beforeDir="false" afterPath="$PROJECT_DIR$/../agroflex-gateway/target/agroflex-gateway-1.0.0.jar.original" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../agroflex-gateway/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../agroflex-gateway/target/classes/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../agroflex-gateway/target/classes/com/agroflex/gateway/GatewayApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/../agroflex-gateway/target/classes/com/agroflex/gateway/GatewayApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../agroflex-gateway/target/classes/com/agroflex/gateway/config/CorsConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/../agroflex-gateway/target/classes/com/agroflex/gateway/config/CorsConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../agroflex-gateway/target/classes/com/agroflex/gateway/config/GatewayConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/../agroflex-gateway/target/classes/com/agroflex/gateway/config/GatewayConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../agroflex-gateway/target/classes/com/agroflex/gateway/filters/JwtAuthFilter.class" beforeDir="false" afterPath="$PROJECT_DIR$/../agroflex-gateway/target/classes/com/agroflex/gateway/filters/JwtAuthFilter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../agroflex-gateway/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/../agroflex-gateway/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../agroflex-geolocation-service/src/main/java/com/agroflex/geo/controller/GeoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../agroflex-geolocation-service/src/main/java/com/agroflex/geo/controller/GeoController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../agroflex-geolocation-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../agroflex-geolocation-service/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../agroflex-notifications-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../agroflex-notifications-service/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../agroflex-orders-service/src/main/java/com/agroflex/orders/client/PaymentServiceClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/../agroflex-orders-service/src/main/java/com/agroflex/orders/client/PaymentServiceClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../agroflex-orders-service/src/main/java/com/agroflex/orders/client/QrServiceClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/../agroflex-orders-service/src/main/java/com/agroflex/orders/client/QrServiceClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../agroflex-orders-service/src/main/java/com/agroflex/orders/controller/OrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../agroflex-orders-service/src/main/java/com/agroflex/orders/controller/OrderController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../agroflex-orders-service/src/main/java/com/agroflex/orders/events/OrderCompletedEvent.java" beforeDir="false" afterPath="$PROJECT_DIR$/../agroflex-orders-service/src/main/java/com/agroflex/orders/events/OrderCompletedEvent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../agroflex-orders-service/src/main/java/com/agroflex/orders/events/OrderCreatedEvent.java" beforeDir="false" afterPath="$PROJECT_DIR$/../agroflex-orders-service/src/main/java/com/agroflex/orders/events/OrderCreatedEvent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../agroflex-orders-service/src/main/java/com/agroflex/orders/model/OrdenTransaccion.java" beforeDir="false" afterPath="$PROJECT_DIR$/../agroflex-orders-service/src/main/java/com/agroflex/orders/model/OrdenTransaccion.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../agroflex-orders-service/src/main/java/com/agroflex/orders/service/EscrowService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../agroflex-orders-service/src/main/java/com/agroflex/orders/service/EscrowService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../agroflex-orders-service/src/main/java/com/agroflex/orders/service/OrderService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../agroflex-orders-service/src/main/java/com/agroflex/orders/service/OrderService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../agroflex-orders-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../agroflex-orders-service/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../agroflex-payments-service/src/main/java/com/agroflex/payments/controller/PaymentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../agroflex-payments-service/src/main/java/com/agroflex/payments/controller/PaymentController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../agroflex-payments-service/src/main/java/com/agroflex/payments/service/PaymentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../agroflex-payments-service/src/main/java/com/agroflex/payments/service/PaymentService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../agroflex-payments-service/src/main/java/com/agroflex/payments/service/StripeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../agroflex-payments-service/src/main/java/com/agroflex/payments/service/StripeService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../agroflex-payments-service/src/main/java/com/agroflex/payments/webhook/StripeWebhookHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/../agroflex-payments-service/src/main/java/com/agroflex/payments/webhook/StripeWebhookHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../agroflex-payments-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../agroflex-payments-service/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../agroflex-qr-service/src/main/java/com/agroflex/qr/controller/QrController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../agroflex-qr-service/src/main/java/com/agroflex/qr/controller/QrController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../agroflex-qr-service/src/main/java/com/agroflex/qr/dto/QrGenerateRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../agroflex-qr-service/src/main/java/com/agroflex/qr/dto/QrGenerateRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../agroflex-qr-service/src/main/java/com/agroflex/qr/dto/QrValidateRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../agroflex-qr-service/src/main/java/com/agroflex/qr/dto/QrValidateRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../agroflex-qr-service/src/main/java/com/agroflex/qr/dto/QrValidateResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/../agroflex-qr-service/src/main/java/com/agroflex/qr/dto/QrValidateResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../agroflex-qr-service/src/main/java/com/agroflex/qr/model/SeguridadQR.java" beforeDir="false" afterPath="$PROJECT_DIR$/../agroflex-qr-service/src/main/java/com/agroflex/qr/model/SeguridadQR.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../agroflex-qr-service/src/main/java/com/agroflex/qr/repository/SeguridadQRRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../agroflex-qr-service/src/main/java/com/agroflex/qr/repository/SeguridadQRRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../agroflex-qr-service/src/main/java/com/agroflex/qr/service/GeoValidationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../agroflex-qr-service/src/main/java/com/agroflex/qr/service/GeoValidationService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../agroflex-qr-service/src/main/java/com/agroflex/qr/service/QrGeneratorService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../agroflex-qr-service/src/main/java/com/agroflex/qr/service/QrGeneratorService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../agroflex-qr-service/src/main/java/com/agroflex/qr/service/QrValidationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../agroflex-qr-service/src/main/java/com/agroflex/qr/service/QrValidationService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../agroflex-qr-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../agroflex-qr-service/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../agroflex-users-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../agroflex-users-service/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../agroflex-frontend/dist/assets/index-6ebbc03c.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../agroflex-frontend/dist/assets/index-94c0fe5b.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../agroflex-frontend/dist/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../agroflex-frontend/dist/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../agroflex-frontend/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../agroflex-frontend/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../agroflex-frontend/node_modules/.package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../agroflex-frontend/node_modules/.package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../agroflex-frontend/node_modules/.vite/deps/_metadata.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../agroflex-frontend/node_modules/.vite/deps/_metadata.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../agroflex-frontend/node_modules/.vite/deps/chunk-C6NICKA5.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../agroflex-frontend/node_modules/.vite/deps/chunk-C6NICKA5.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../agroflex-frontend/node_modules/.vite/deps/chunk-HWS6HECM.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../agroflex-frontend/node_modules/.vite/deps/chunk-HWS6HECM.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../agroflex-frontend/node_modules/.vite/deps/date-fns.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../agroflex-frontend/node_modules/.vite/deps/date-fns.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../agroflex-frontend/node_modules/.vite/deps/date-fns_locale.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../agroflex-frontend/node_modules/.vite/deps/date-fns_locale.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../agroflex-frontend/node_modules/.vite/deps/firebase_app.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../agroflex-frontend/node_modules/.vite/deps/firebase_app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../agroflex-frontend/node_modules/.vite/deps/firebase_firestore.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../agroflex-frontend/node_modules/.vite/deps/firebase_firestore.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../agroflex-frontend/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../agroflex-frontend/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../agroflex-frontend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../agroflex-frontend/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../agroflex-frontend/src/api/authApi.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../agroflex-frontend/src/api/authApi.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../agroflex-frontend/src/api/axiosClient.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../agroflex-frontend/src/api/axiosClient.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../agroflex-frontend/src/api/catalogApi.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../agroflex-frontend/src/api/catalogApi.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../agroflex-frontend/src/api/ordersApi.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../agroflex-frontend/src/api/ordersApi.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../agroflex-frontend/src/api/paymentsApi.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../agroflex-frontend/src/api/paymentsApi.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../agroflex-frontend/src/api/qrApi.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../agroflex-frontend/src/api/qrApi.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../agroflex-frontend/src/components/catalogo/BannerVendedor.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../../agroflex-frontend/src/components/catalogo/BannerVendedor.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../agroflex-frontend/src/components/catalogo/BarraFiltros.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../../agroflex-frontend/src/components/catalogo/BarraFiltros.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../agroflex-frontend/src/components/catalogo/CarruselInformativo.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../../agroflex-frontend/src/components/catalogo/CarruselInformativo.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../agroflex-frontend/src/components/catalogo/CatalogoGrid.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../../agroflex-frontend/src/components/catalogo/CatalogoGrid.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../agroflex-frontend/src/components/catalogo/DestacadosCarrusel.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../../agroflex-frontend/src/components/catalogo/DestacadosCarrusel.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../agroflex-frontend/src/components/catalogo/FABPublicar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../../agroflex-frontend/src/components/catalogo/FABPublicar.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../agroflex-frontend/src/components/catalogo/FiltrosAvanzados.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../../agroflex-frontend/src/components/catalogo/FiltrosAvanzados.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../agroflex-frontend/src/components/catalogo/NavbarPrincipal.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../../agroflex-frontend/src/components/catalogo/NavbarPrincipal.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../agroflex-frontend/src/components/catalogo/ProductCard.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../../agroflex-frontend/src/components/catalogo/ProductCard.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../agroflex-frontend/src/components/catalogo/SkeletonCard.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../../agroflex-frontend/src/components/catalogo/SkeletonCard.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../agroflex-frontend/src/components/common/Logo/AgroFlexLogo.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../../agroflex-frontend/src/components/common/Logo/AgroFlexLogo.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../agroflex-frontend/src/components/common/LogoutButton/LogoutButton.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../../agroflex-frontend/src/components/common/LogoutButton/LogoutButton.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../agroflex-frontend/src/components/common/TestimonioCard/TestimonioCard.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../../agroflex-frontend/src/components/common/TestimonioCard/TestimonioCard.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../agroflex-frontend/src/components/landing/FinalCTA.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../../agroflex-frontend/src/components/landing/FinalCTA.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../agroflex-frontend/src/components/landing/Footer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../../agroflex-frontend/src/components/landing/Footer.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../agroflex-frontend/src/components/landing/Gallery.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../../agroflex-frontend/src/components/landing/Gallery.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../agroflex-frontend/src/components/landing/HeroCarousel.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../../agroflex-frontend/src/components/landing/HeroCarousel.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../agroflex-frontend/src/components/landing/HowItWorks.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../../agroflex-frontend/src/components/landing/HowItWorks.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../agroflex-frontend/src/components/landing/Navbar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../../agroflex-frontend/src/components/landing/Navbar.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../agroflex-frontend/src/components/landing/RolesSection.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../../agroflex-frontend/src/components/landing/RolesSection.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../agroflex-frontend/src/components/landing/TrustSignals.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../../agroflex-frontend/src/components/landing/TrustSignals.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../agroflex-frontend/src/components/layout/PrivateRoute/PrivateRoute.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../../agroflex-frontend/src/components/layout/PrivateRoute/PrivateRoute.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../agroflex-frontend/src/components/layout/Sidebar/.gitkeep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../agroflex-frontend/src/components/qr/EntradaManual/EntradaManual.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../../agroflex-frontend/src/components/qr/EntradaManual/EntradaManual.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../agroflex-frontend/src/components/qr/EscanerVisor/EscanerVisor.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../../agroflex-frontend/src/components/qr/EscanerVisor/EscanerVisor.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../agroflex-frontend/src/components/qr/PermisoCamara/PermisoCamara.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../../agroflex-frontend/src/components/qr/PermisoCamara/PermisoCamara.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../agroflex-frontend/src/components/qr/ResultadoValidacion/ResultadoValidacion.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../../agroflex-frontend/src/components/qr/ResultadoValidacion/ResultadoValidacion.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../agroflex-frontend/src/hooks/useAuth.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../agroflex-frontend/src/hooks/useAuth.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../agroflex-frontend/src/hooks/useDebounce.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../agroflex-frontend/src/hooks/useDebounce.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../agroflex-frontend/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../agroflex-frontend/src/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../agroflex-frontend/src/pages/auth/LoginPage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../../agroflex-frontend/src/pages/auth/LoginPage.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../agroflex-frontend/src/pages/auth/RegisterPage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../../agroflex-frontend/src/pages/auth/RegisterPage.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../agroflex-frontend/src/pages/auth/VerifyBadgePage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../../agroflex-frontend/src/pages/auth/VerifyBadgePage.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../agroflex-frontend/src/pages/buyer/DashboardBuyer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../../agroflex-frontend/src/pages/buyer/DashboardBuyer.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../agroflex-frontend/src/pages/buyer/EscanearQR.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../../agroflex-frontend/src/pages/buyer/EscanearQR.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../agroflex-frontend/src/pages/catalog/CatalogPage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../../agroflex-frontend/src/pages/catalog/CatalogPage.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../agroflex-frontend/src/pages/catalog/HarvestDetailPage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../../agroflex-frontend/src/pages/catalog/HarvestDetailPage.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../agroflex-frontend/src/pages/producer/DashboardProducer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../../agroflex-frontend/src/pages/producer/DashboardProducer.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../agroflex-frontend/src/pages/producer/MyHarvestsPage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../../agroflex-frontend/src/pages/producer/MyHarvestsPage.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../agroflex-frontend/src/pages/producer/PublishHarvestPage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../../agroflex-frontend/src/pages/producer/PublishHarvestPage.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../agroflex-frontend/src/pages/shared/LandingPage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../../agroflex-frontend/src/pages/shared/LandingPage.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../agroflex-frontend/src/pages/supplier/DashboardSupplier.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../../agroflex-frontend/src/pages/supplier/DashboardSupplier.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../agroflex-frontend/src/routes/AppRouter.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../../agroflex-frontend/src/routes/AppRouter.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../agroflex-frontend/src/routes/routeConfig.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../agroflex-frontend/src/routes/routeConfig.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../agroflex-frontend/src/services/firebase.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../agroflex-frontend/src/services/firebase.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../agroflex-frontend/src/services/pedidoService.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../agroflex-frontend/src/services/pedidoService.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../agroflex-frontend/src/services/productoService.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../agroflex-frontend/src/services/productoService.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../agroflex-frontend/src/services/qrService.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../agroflex-frontend/src/services/qrService.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../agroflex-frontend/src/store/authStore.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../agroflex-frontend/src/store/authStore.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../agroflex-frontend/src/store/catalogStore.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../agroflex-frontend/src/store/catalogStore.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../agroflex-frontend/src/store/orderStore.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../agroflex-frontend/src/store/orderStore.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../agroflex-frontend/src/utils/constants.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../agroflex-frontend/src/utils/constants.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../agroflex-frontend/tailwind.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../agroflex-frontend/tailwind.config.js" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 0
+}</component>
+  <component name="ProjectId" id="3B0Z7lpTA6zOwfhFYVvyE5d0WL9" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/xampp/htdocs/AgroflexSOA/agroflex-backend/agroflex-auth-service&quot;
+  }
+}</component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="0d332b27-39a4-46c2-8bb6-a98e9067eb1e" name="Changes" comment="" />
+      <created>1773627782686</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1773627782686</updated>
+    </task>
+    <servers />
+  </component>
+</project>

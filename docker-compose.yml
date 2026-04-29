@@ -35,7 +35,7 @@ services:
     networks:
       - agroflex-net
     environment:
-      MYSQL_ROOT_PASSWORD: root
+      MYSQL_ROOT_PASSWORD: ${DB_PASS:-root}
       MYSQL_DATABASE: agroflexsoa
     ports:
       - "3306:3306"
@@ -43,7 +43,7 @@ services:
       - mysql_data:/var/lib/mysql
       - ./SOAarquitecture/agroflexsoa.sql:/docker-entrypoint-initdb.d/init.sql
     healthcheck:
-      test: ["CMD", "mysqladmin", "ping", "-h", "localhost", "-u", "root", "-proot"]
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost", "-u", "root", "-p${DB_PASS:-root}"]
       interval: 10s
       timeout: 5s
       retries: 10

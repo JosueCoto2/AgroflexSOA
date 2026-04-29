@@ -79,6 +79,7 @@ services:
         condition: service_healthy
     environment:
       <<: *db-env
+      SPRING_PROFILES_ACTIVE: prod
 
   # ── Auth Service (8081) ──────────────────────────────────────────────────────
   auth:
